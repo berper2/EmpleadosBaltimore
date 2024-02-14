@@ -33,3 +33,10 @@ library(rio)
 datos_rio <- import("Data/Baltimore_City_Employee_Salaries.csv")
 ```
 
+#Importar leyendo línea a línea
+```{r}
+datos_readline <- readLines("Data/Baltimore_City_Employee_Salaries.csv")
+
+
+```
+
