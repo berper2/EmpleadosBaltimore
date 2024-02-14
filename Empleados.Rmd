@@ -16,6 +16,14 @@ rm(list = ls())
 
 # Importamos datos con rbase
 ```{r}
-datosh <- read.csv("Data/Baltimore_City_Employee_Salaries.csv")
+datos_rbase <- read.csv("Data/Baltimore_City_Employee_Salaries.csv")
+```
+
+#Importamos con readr
+```{r}
+library(readr)
+datos_readr <- read_csv("Data/Baltimore_City_Employee_Salaries.csv", 
+    col_types = cols(hireDate = col_date(format = "%Y-%m-%d")))
+
 ```
 
