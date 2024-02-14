@@ -14,7 +14,7 @@ knitr::opts_chunk$set(echo = TRUE)
 rm(list = ls())
 ```
 
-# Importamos datos con rbase
+#Importamos datos con rbase
 ```{r}
 datos_rbase <- read.csv("Data/Baltimore_City_Employee_Salaries.csv")
 ```
@@ -25,5 +25,11 @@ library(readr)
 datos_readr <- read_csv("Data/Baltimore_City_Employee_Salaries.csv", 
     col_types = cols(hireDate = col_date(format = "%Y-%m-%d")))
 
+```
+
+#Importamos con RIO
+```{r}
+library(rio)
+datos_rio <- import("Data/Baltimore_City_Employee_Salaries.csv")
 ```
 
